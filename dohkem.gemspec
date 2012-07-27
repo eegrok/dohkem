@@ -2,7 +2,7 @@ require 'rake'
 
 Gem::Specification.new do |s|
   s.name = 'dohkem'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.summary = "Kem's default doh setup"
   s.description = "Can require 'doh/scriptapp' for default script settings, e.g."
   s.require_path = 'lib'
