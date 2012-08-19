@@ -22,7 +22,7 @@ else
 end
 Dir::mkdir(logdirname) if !FileTest::directory?(logdirname)
 
-console_acceptor = DohLog::StreamAcceptor.new(true, STDOUT)
+console_acceptor = DohLog::StreamAcceptor.new(Doh.config[:flush_console_output] == nil ? true : Doh.config[:flush_console_output], STDOUT)
 filtered_console_acceptor = DohLog::FilterAcceptor.new(console_acceptor) {|event| event.severity >= (Doh.config[:console_log_level] || DohLog::INFO)}
 
 filename = File.join(logdirname, File.basename($0, '.*') + '.log')
