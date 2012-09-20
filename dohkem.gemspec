@@ -2,7 +2,7 @@ require 'rake'
 
 Gem::Specification.new do |s|
   s.name = 'dohkem'
-  s.version = '0.0.4'
+  s.version = '0.0.5'
   s.summary = "Kem's default doh setup"
   s.description = "Can require 'doh/scriptapp' for default script settings, e.g."
   s.require_path = 'lib'
@@ -11,9 +11,9 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'dohweb', '>= 0.1.4'
   s.add_runtime_dependency 'dohdata', '>= 0.1.2'
   s.add_runtime_dependency 'dohmysql', '>= 0.2.3'
-  s.add_runtime_dependency 'dohroot', '>= 0.1.0'
+  s.add_runtime_dependency 'dohroot', '>= 0.1.1'
   s.add_runtime_dependency 'dohlog', '>= 0.1.5'
-  s.add_runtime_dependency 'dohutil', '>= 0.2.3'
+  s.add_runtime_dependency 'dohutil', '>= 0.2.7'
   s.add_runtime_dependency 'mysql2', '>= 0.3.11'
   s.add_runtime_dependency 'sqlstmt', '>= 0.1.1'
   s.add_development_dependency 'dohtest', '>= 0.1.8'
