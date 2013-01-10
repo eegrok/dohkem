@@ -5,8 +5,8 @@ rescue Doh::DohRootNotFoundException
   exit 1
 end
 require 'doh/config'
-
-#kjmtodo -- perhaps make this load production / development or something? -- or make them be links on the local filesystem?
-Doh.load_config_file('active_runnable')
-
+require 'doh/env'
 require 'doh/logging_config'
+
+$LOAD_PATH.push(Doh.root)
+
